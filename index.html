@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>試験版 高性能QRコード生成・解析ツール</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>試験版 QRコード生成・解析ツール</h1>
+        <p>URLやテキストからQRコードを生成し、QRコードの内容を解析します。</p>
+
+        <input type="text" id="qrInput" placeholder="URLまたはテキストを入力してください">
+        <div class="buttons">
+            <button onclick="generateQRCode()">QRコード生成</button>
+            <button onclick="analyzeQRCode()">QRコード解析</button>
+        </div>
+
+        <h3>QRコード:</h3>
+        <div id="qrCode" class="output"></div>
+
+        <h3>解析結果:</h3>
+        <div id="result" class="output"></div>
+
+        <h4 class="disclaimer">注意: このツールの使用によって生じた問題について、開発者は一切の責任を負いません。</h4>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
